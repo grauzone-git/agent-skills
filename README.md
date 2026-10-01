@@ -1,6 +1,10 @@
 # Agent skills
 
-Reusable [Agent Skills](https://agentskills.io/) for software engineering and productivity.
+Reusable [Agent Skills](https://agentskills.io/) for software engineering and productivity. Browse the [skill catalog](SKILLS.md) to find a skill.
+
+| Directory | Skills |
+|---|---|
+| [`skills/productivity/`](skills/productivity/) | Decision-making, agent instructions, writing, and model routing. |
 
 ## Install
 
@@ -60,6 +64,8 @@ Add `--skill <name>` to select a skill directly. Add `--yes` to skip prompts. Fo
 npx skills@latest add grauzone-git/agent-skills --skill research --agent opencode --yes
 ```
 
+Replace `research` with a skill name from the [catalog](SKILLS.md) and `opencode` with your agent's identifier above. Add `--global` for a user-level installation.
+
 ## Update or remove skills
 
 Run these commands from the project where you installed the skills:
@@ -71,9 +77,13 @@ npx skills@latest remove
 
 The CLI guides you through choosing which installed skills to update or remove. Add `--global` to target a user-level installation.
 
+## About skills
+
+Each skill is a directory containing a `SKILL.md` file and, when needed, supporting files. Review a skill before installing it. Skills provide instructions to an AI agent and may reference tools or actions in your environment.
 
 ## References
 
+- [Skill catalog](SKILLS.md)
 - [Agent Skills specification](https://agentskills.io/specification)
 - [Skills CLI](https://github.com/vercel-labs/skills)
 - [Supported agents](https://github.com/vercel-labs/skills#supported-agents)
