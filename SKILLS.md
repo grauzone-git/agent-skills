@@ -21,3 +21,13 @@ Big thanks to [Matt Pocock](https://github.com/mattpocock/skills) and [poteto at
 | [`to-tickets`](skills/engineering/to-tickets/SKILL.md) | You want to break approved work into dependency-ordered issues. |
 | [`triage`](skills/engineering/triage/SKILL.md) | You need to assess incoming issues or pull requests and decide what should happen next. |
 | [`wayfinder`](skills/engineering/wayfinder/SKILL.md) | You need to plan and track a large initiative across sessions. |
+
+## Research and design
+
+| Skill | Use when |
+|---|---|
+| [`codebase-design`](skills/engineering/codebase-design/SKILL.md) | You want to improve module boundaries and make interfaces easier to use and test. |
+| [`domain-modeling`](skills/engineering/domain-modeling/SKILL.md) | You need to define project terminology or record domain design decisions. |
+| [`improve-codebase-architecture`](skills/engineering/improve-codebase-architecture/SKILL.md) | You want to identify, compare, and explore codebase architecture improvements. |
+| [`prototype`](skills/engineering/prototype/SKILL.md) | You want to test an idea quickly before committing to a full implementation. |
+| [`research`](skills/engineering/research/SKILL.md) | You need an evidence-based answer with trustworthy sources. |
