@@ -39,3 +39,10 @@ Big thanks to [Matt Pocock](https://github.com/mattpocock/skills) and [poteto at
 | [`code-review`](skills/engineering/code-review/SKILL.md) | You want to review a change for defects, regressions, or design problems. |
 | [`implement`](skills/engineering/implement/SKILL.md) | You want to implement an approved software change. |
 | [`tdd`](skills/engineering/tdd/SKILL.md) | You want to guide software development with a test-first workflow. |
+
+## Agent instructions and writing
+
+| Skill | Use when |
+|---|---|
+| [`unslop`](skills/productivity/unslop/SKILL.md) | You want to remove AI writing patterns, filler, and jargon while preserving meaning and tone. |
+| [`writing-for-agents`](skills/productivity/writing-for-agents/SKILL.md) | You are creating or editing skills, `AGENTS.md`, `CLAUDE.md`, or other instructions an agent reads. |
