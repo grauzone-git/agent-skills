@@ -31,3 +31,11 @@ Big thanks to [Matt Pocock](https://github.com/mattpocock/skills) and [poteto at
 | [`improve-codebase-architecture`](skills/engineering/improve-codebase-architecture/SKILL.md) | You want to identify, compare, and explore codebase architecture improvements. |
 | [`prototype`](skills/engineering/prototype/SKILL.md) | You want to test an idea quickly before committing to a full implementation. |
 | [`research`](skills/engineering/research/SKILL.md) | You need an evidence-based answer with trustworthy sources. |
+
+## Development and testing
+
+| Skill | Use when |
+|---|---|
+| [`code-review`](skills/engineering/code-review/SKILL.md) | You want to review a change for defects, regressions, or design problems. |
+| [`implement`](skills/engineering/implement/SKILL.md) | You want to implement an approved software change. |
+| [`tdd`](skills/engineering/tdd/SKILL.md) | You want to guide software development with a test-first workflow. |
