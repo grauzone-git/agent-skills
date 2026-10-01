@@ -46,3 +46,9 @@ Big thanks to [Matt Pocock](https://github.com/mattpocock/skills) and [poteto at
 |---|---|
 | [`unslop`](skills/productivity/unslop/SKILL.md) | You want to remove AI writing patterns, filler, and jargon while preserving meaning and tone. |
 | [`writing-for-agents`](skills/productivity/writing-for-agents/SKILL.md) | You are creating or editing skills, `AGENTS.md`, `CLAUDE.md`, or other instructions an agent reads. |
+
+## Repository setup
+
+| Skill | Use when |
+|---|---|
+| [`setup-software-engineering-skills`](skills/engineering/setup-software-engineering-skills/SKILL.md) | You are configuring issue tracking, labels, and documentation paths for the planning skills in a repository. |

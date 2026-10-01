@@ -4,6 +4,7 @@ Reusable [Agent Skills](https://agentskills.io/) for software engineering and pr
 
 | Directory | Skills |
 |---|---|
+| [`skills/engineering/`](skills/engineering/) | Planning, research, software design, implementation, testing, and code review. |
 | [`skills/productivity/`](skills/productivity/) | Decision-making, agent instructions, writing, and model routing. |
 
 ## Install
