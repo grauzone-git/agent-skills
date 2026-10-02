@@ -19,8 +19,8 @@ At the start of every task, classify the requested deliverables and assign each 
 | Deliverable | Model |
 | --- | --- |
 | Development implementation: maintained code, tests, fixtures, build, packaging, and CI, plus scripts and research needed to complete that implementation, excluding prose deliverables | GPT 6.1 Sol (`gpt-6.1-sol`); use GPT 6 Astra (`gpt-6-astra`) only under the Development escalation rule below |
-| Prose shipped with a Development change: documentation, help text, comments, and docstrings | Claude Sonnet 5 (`claude-sonnet-5`), always |
-| Independent prose documentation, code reviews, PR descriptions, specifications, independent research, issue writing, and substantive technical issue comments, with none of the work attached to a Development change | Claude Sonnet 5 (`claude-sonnet-5`) or Claude Opus 5.5 (`claude-opus-5-5`), selected by authoring scope below |
+| Prose shipped with a Development change: documentation, help text, comments, and docstrings | Claude Sonnet 5.5 (`claude-sonnet-5-5`), always |
+| Independent prose documentation, code reviews, PR descriptions, specifications, independent research, issue writing, and substantive technical issue comments, with none of the work attached to a Development change | Claude Sonnet 5.5 (`claude-sonnet-5-5`) or Claude Opus 5.5 (`claude-opus-5-5`), selected by authoring scope below |
 | Other work: one-time scripts, commit messages and execution, routine issue triage, logistical issue comments, and work that is neither Development nor Authoring | GPT 6 Luna (`gpt-6-luna`), subject to the Other-work Astra rule below |
 
 ## Classify boundaries
@@ -33,7 +33,7 @@ At the start of every task, classify the requested deliverables and assign each 
 
 ## Choose the authoring model
 
-Use Claude Sonnet 5 (`claude-sonnet-5`) for one bounded authoring deliverable that can be completed from the prompt, the target artifact, and directly relevant source files. This includes editing one document, reviewing a focused change set, writing a PR description from a focused diff, or writing issue text from supplied facts.
+Use Claude Sonnet 5.5 (`claude-sonnet-5-5`) for one bounded authoring deliverable that can be completed from the prompt, the target artifact, and directly relevant source files. This includes editing one document, reviewing a focused change set, writing a PR description from a focused diff, or writing issue text from supplied facts.
 
 Use Claude Opus 5.5 (`claude-opus-5-5`) for independent authoring that requires surveying the repository, connecting several areas, inferring unstated domain constraints, or researching across independent sources. This usually includes broad specifications and code reviews spanning several modules. Opus never handles prose attached to a Development change.
 
@@ -50,6 +50,8 @@ Explain each escalation to the user. Return routine follow-up work to its assign
 ## Apply overrides and reuse sessions
 
 The user's explicit model choice overrides this routing for the work it covers. Apply it only to that scope; route any other deliverables normally.
+
+When the `/pr` or `/code-review` skill is used, ask the user whether to use Claude Opus 5.5 (`claude-opus-5-5`) or Claude Fable 5.1 (`claude-fable-5-1`), presenting Fable 5.1 as the default, and apply their choice as the model override for that work. If the user has no preference, use Fable 5.1.
 
 When routing requires a separate session, search the selected harness for an existing session with reusable context before creating one. Apply this to every deliverable and model. A focused follow-up review of the same topic should resume its earlier review session when that session is suitable.
 
